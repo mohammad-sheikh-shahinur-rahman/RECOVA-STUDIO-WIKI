@@ -52,6 +52,7 @@
 | **Windows MSIX (Manual)** | `Recova-Studio-v1.1.1.msix` | `~297 MB` | Windows 10/11 x64 | [📥 Download MSIX](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-v1.1.1.msix) |
 | **Windows Setup Installer** | `Recova-Studio-Setup-v1.1.1-x64.exe` | `~220 MB` | Windows 10/11 x64 | [📥 Download Setup EXE](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Setup-v1.1.1-x64.exe) |
 | **Portable Executable** | `Recova-Studio-Portable-v1.1.0-x64.exe` | `~218 MB` | Standalone USB / Any PC | [📥 Download Portable EXE](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Portable-v1.1.0-x64.exe) |
+| **macOS Apple Silicon** | `Recova-Studio-arm64.dmg` | `~232 MB` | macOS 12+ (M1/M2/M3/M4) | [🍏 Download DMG (arm64)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-arm64.dmg) |
 | **macOS Intel** | `Recova-Studio-x64.dmg` | `~240 MB` | macOS 12+ (Intel Core) | [🍏 Download DMG (x64)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-x64.dmg) |
 | **Linux Standalone** | `Recova-Studio-linux-x64.AppImage` | `~247 MB` | Linux x86_64 | [🐧 Download AppImage](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-linux-x64.AppImage) |
 | **Integrity Checksums** | `SHA256SUMS.txt` | `~1 KB` | All Builds | [📄 View Checksums](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/SHA256SUMS.txt) |
@@ -107,6 +108,7 @@
 
 ```text
 cb3df86c05984a4f5fba4e934a1a3585b3685f03a9f7358188e0c573b2b80a5a  Recova-Studio-x64.dmg
+9ef5ddf1d9a734000102e51c73cd93c832c83c3066e884ae3d8384c92f4b7992  Recova-Studio-arm64.dmg
 f3e1b6acdf6c507dc765aae243fa65e99795aa094744c23473cde2afbd016044  Recova-Studio-linux-x64.AppImage
 470d68fcb2a1a6343e54391572d479ff02ee7940a267a3e5d66940110116cb1a  Recova-Studio-Setup-v1.1.1-x64.exe
 310e5ead1ad215d1d701fde1be8300c2b9a162f385a4de07b2a38385de39bb  Recova-Studio-v1.1.1.msix
