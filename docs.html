@@ -124,6 +124,23 @@ Add-AppxPackage -Path ".\Recova-Studio-v1.1.1.msix"
 
         <h3>3. Portable Executable (.exe)</h3>
         <p><code>Recova-Studio-Portable-v1.1.0-x64.exe</code> runs directly from any folder or USB thumb drive without writing to registry keys or requiring administrator privileges.</p>
+
+        <h3>4. macOS Disk Image (.dmg) Installation</h3>
+        <p>For macOS Sonoma, Sequoia, and Monterey (Apple Silicon & Intel):</p>
+        <ol>
+          <li>Download <code>Recova-Studio-arm64.dmg</code> (for M1/M2/M3/M4 Macs) or <code>Recova-Studio-x64.dmg</code> (for Intel Macs).</li>
+          <li>Double-click the <code>.dmg</code> file to mount the disk image.</li>
+          <li>Drag and drop the <strong>Recova Studio</strong> icon into your <strong>Applications</strong> folder.</li>
+          <li>Grant Screen Recording and Microphone permissions in <em>System Settings → Privacy & Security</em> on first launch.</li>
+        </ol>
+
+        <h3>5. Linux AppImage Installation</h3>
+        <p>Compatible with Ubuntu, Debian, Fedora, Arch, openSUSE, and all modern 64-bit Linux distributions:</p>
+        <div class="code-block">
+# Make AppImage executable and launch:
+chmod +x Recova-Studio-linux-x64.AppImage
+./Recova-Studio-linux-x64.AppImage
+        </div>
       </article>
 
       <!-- Section: Quickstart -->

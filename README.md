@@ -38,6 +38,9 @@
 | **Windows MSIX (Manual)** | `Recova-Studio-v1.1.1.msix` | `~297 MB` | Windows 10/11 x64 | [📥 Download MSIX](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-v1.1.1.msix) |
 | **Windows Setup Installer** | `Recova-Studio-Setup-v1.1.0-x64.exe` | `~222 MB` | Windows 10/11 x64 | [📥 Download Setup EXE](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Setup-v1.1.0-x64.exe) |
 | **Portable Executable** | `Recova-Studio-Portable-v1.1.0-x64.exe` | `~218 MB` | Standalone USB / Any PC | [📥 Download Portable EXE](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Portable-v1.1.0-x64.exe) |
+| **macOS Apple Silicon** | `Recova-Studio-arm64.dmg` | `~180 MB` | macOS 12+ (M1/M2/M3/M4) | [🍏 Download DMG (arm64)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-arm64.dmg) |
+| **macOS Intel** | `Recova-Studio-x64.dmg` | `~185 MB` | macOS 12+ (Intel Core) | [🍏 Download DMG (x64)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-x64.dmg) |
+| **Linux Standalone** | `Recova-Studio-linux-x64.AppImage` | `~140 MB` | Linux x86_64 | [🐧 Download AppImage](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-linux-x64.AppImage) |
 | **Integrity Checksums** | `SHA256SUMS.txt` | `~1 KB` | All Builds | [📄 View Checksums](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/SHA256SUMS.txt) |
 
 ---
