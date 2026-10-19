@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recova Studio — Official Documentation Wiki & User Guide</title>
+  <meta name="description" content="Complete documentation wiki and user manual for Recova Studio: Installation, 3D mockups, CapCut captions, offline Whisper AI, 3D LUT color grading, audio studio, and shortcuts.">
+  <link rel="icon" type="image/png" href="assets/app-icons/recordly-32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <img src="assets/recova-logo.png" alt="Recova Studio Logo" class="brand-icon">
+        <span>Recova<span style="color: var(--accent-primary);">Wiki</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#features" class="nav-link">Features</a></li>
+        <li><a href="index.html#download" class="nav-link">Downloads</a></li>
+        <li><a href="docs.html" class="nav-link active">Documentation</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub</a>
+        <a href="index.html#download" class="btn btn-primary btn-sm">Download v1.1.1</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="container docs-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="docs-sidebar">
+      <div class="docs-search">
+        <svg class="docs-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="wikiSearch" placeholder="Search documentation...">
+      </div>
+
+      <nav>
+        <div class="docs-nav-group">
+          <div class="docs-nav-title">Getting Started</div>
+          <ul class="docs-nav-links">
+            <li><a href="#installation" class="active">Installation & Setup</a></li>
+            <li><a href="#quickstart">Quickstart Guide</a></li>
+            <li><a href="#recording">Recording Workflow</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <div class="docs-nav-title">Video Editing & NLE</div>
+          <ul class="docs-nav-links">
+            <li><a href="#timeline">Multi-Track Timeline</a></li>
+            <li><a href="#ripple-edit">Ripple Edit & Gap Removal</a></li>
+            <li><a href="#speed-curves">Speed Curves & Ramping</a></li>
+            <li><a href="#auto-reframe">Smart Auto-Reframe (9:16)</a></li>
+            <li><a href="#freeze-frames">Freeze Frames & Visualizer</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <div class="docs-nav-title">Visuals & Styling</div>
+          <ul class="docs-nav-links">
+            <li><a href="#mockups">3D Device Mockup Studio</a></li>
+            <li><a href="#chroma-key">Chroma Key & AI Cutout</a></li>
+            <li><a href="#lut-grading">3D LUT Color Grading</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <div class="docs-nav-title">Audio & Subtitles</div>
+          <ul class="docs-nav-links">
+            <li><a href="#whisper-captions">Whisper AI Auto-Captions</a></li>
+            <li><a href="#subtitle-io">SRT & VTT Import / Export</a></li>
+            <li><a href="#audio-studio">Audio Mixer & EBU R128</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <div class="docs-nav-title">Export & Reference</div>
+          <ul class="docs-nav-links">
+            <li><a href="#gpu-export">GPU NVENC Export & 4K</a></li>
+            <li><a href="#shortcuts">Keyboard Shortcuts</a></li>
+            <li><a href="#troubleshooting">Troubleshooting & FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Documentation Content -->
+    <main class="docs-content">
+
+      <!-- Section: Installation -->
+      <article id="installation" class="docs-article">
+        <h2>📦 Installation & Setup Guide</h2>
+        <p>Recova Studio is distributed in three official packaging formats for Windows 10/11 x64 systems:</p>
+
+        <h3>1. Windows MSIX Package (Recommended)</h3>
+        <p>The modern Windows Store application package (.msix) offers sandboxed security, automated zero-clutter uninstallation, and seamless background updates.</p>
+        <div class="callout callout-tip">
+          <div>💡</div>
+          <div><strong>Quick Install:</strong> Double-click <code>Recova-Studio-v1.1.1.msix</code> to open the native Windows App Installer, then click <strong>Install</strong>.</div>
+        </div>
+
+        <p>If your system requires installing the self-signed test certificate into your local Trusted Root store, run this one-line PowerShell command in an elevated prompt:</p>
+        <div class="code-block">
+# Install MSIX directly via PowerShell:
+Add-AppxPackage -Path ".\Recova-Studio-v1.1.1.msix"
+        </div>
+
+        <h3>2. Traditional Setup Installer (.exe)</h3>
+        <p>For users who prefer classic Windows desktop applications with customizable installation folders and Start Menu shortcuts, run <code>Recova-Studio-Setup-v1.1.0-x64.exe</code>.</p>
+
+        <h3>3. Portable Executable (.exe)</h3>
+        <p><code>Recova-Studio-Portable-v1.1.0-x64.exe</code> runs directly from any folder or USB thumb drive without writing to registry keys or requiring administrator privileges.</p>
+      </article>
+
+      <!-- Section: Quickstart -->
+      <article id="quickstart" class="docs-article">
+        <h2>🚀 Quickstart Guide</h2>
+        <p>Get your first cinematic video created and exported in less than 3 minutes:</p>
+        <ol>
+          <li><strong>Select Capture Source:</strong> Choose Full Screen, Specific Window, or Custom Area.</li>
+          <li><strong>Configure Audio & Camera:</strong> Toggle System Audio (WASAPI loopback) and Microphone. Optionally enable the floating Webcam Bubble.</li>
+          <li><strong>Start Recording:</strong> Press <kbd>Ctrl+Shift+R</kbd> or click the red Record button. The floating HUD timer will appear.</li>
+          <li><strong>Stop Recording:</strong> Press <kbd>Ctrl+Shift+S</kbd>. The project automatically loads into the Recova Studio Video Editor.</li>
+          <li><strong>Add 3D Mockup:</strong> In the right Inspector panel, click <strong>Device Mockups</strong> and select <em>MacBook Pro 16"</em> or <em>iPhone 16 Pro</em>.</li>
+          <li><strong>Generate Captions:</strong> Click <strong>Auto-Captions</strong> and select <em>Transcribe with Whisper</em>. Word-by-word karaoke text appears automatically!</li>
+          <li><strong>Export 4K Video:</strong> Click <strong>Export Video</strong> on the top right, pick your bitrate preset, and render with NVIDIA NVENC.</li>
+        </ol>
+      </article>
+
+      <!-- Section: Recording -->
+      <article id="recording" class="docs-article">
+        <h2>🎥 Screen & Audio Recording Architecture</h2>
+        <p>Recova Studio uses native low-level Windows APIs for zero dropped frames and ultra-low CPU consumption:</p>
+        <ul>
+          <li><strong>Windows Graphics Capture (WGC) API:</strong> Hardware-accelerated desktop capture bypassing slow GDI pipelines, capable of smooth 4K 60FPS even under heavy 3D gaming load.</li>
+          <li><strong>WASAPI Audio Loopback:</strong> Direct digital capture of Windows system audio at 48kHz without virtual audio cables or sound degradation.</li>
+          <li><strong>Floating Recording HUD:</strong> A discreet, draggable mini-controller that remains invisible to your recording while letting you pause, resume, or restart at any moment.</li>
+        </ul>
+      </article>
+
+      <!-- Section: Timeline -->
+      <article id="timeline" class="docs-article">
+        <h2>🎛️ Multi-Track Timeline & Editing (NLE)</h2>
+        <p>The timeline in Recova Studio is built on an ultra-responsive WebGPU / HTML5 Canvas rendering engine supporting 120Hz smooth scrolling and scrubbing:</p>
+        <ul>
+          <li><strong>Video Track (V1):</strong> Holds your screen footage, clips, and cuts.</li>
+          <li><strong>Zoom Regions Track:</strong> Visual indicators for camera zooms with dynamic spring damping.</li>
+          <li><strong>Audio Tracks (A1 / A2):</strong> Separate channels for desktop audio and microphone with live peak meters.</li>
+          <li><strong>Captions & Subtitle Track:</strong> Independent timing blocks for karaoke cues and kinetic title overlays.</li>
+        </ul>
+      </article>
+
+      <!-- Section: Ripple Edit -->
+      <article id="ripple-edit" class="docs-article">
+        <h2>🎚️ Ripple Edit & Auto-Gap Removal</h2>
+        <p>Say goodbye to manually dragging clips to close empty spaces after making cuts. Recova Studio includes full CapCut-style Ripple Delete functionality:</p>
+        <div class="callout callout-info">
+          <div>⚡</div>
+          <div><strong>Keyboard Shortcut:</strong> Press <kbd>Shift+Delete</kbd> or <kbd>X</kbd> to Ripple Delete the selected clip.</div>
+        </div>
+        <p>When Ripple Delete is executed:</p>
+        <ol>
+          <li>The selected clip region is removed from the timeline.</li>
+          <li>All subsequent video clips are automatically shifted left to fill the exact gap.</li>
+          <li>Synchronized audio tracks, zoom regions, annotations, and karaoke caption cues are shifted simultaneously, preserving complete AV sync.</li>
+        </ol>
+      </article>
+
+      <!-- Section: Speed Curves -->
+      <article id="speed-curves" class="docs-article">
+        <h2>⚡ Speed Curves & Velocity Ramping</h2>
+        <p>Recova Studio lets you create professional pacing using Bézier speed curves rather than flat, boring speed multipliers:</p>
+        <ul>
+          <li><strong>Montage Curve:</strong> Fast entry (2x) → Dramatic slow-motion middle (0.5x) → Fast exit (2x). Perfect for showcasing UI workflows.</li>
+          <li><strong>Hero Shot:</strong> Normal (1x) → Extreme slow-mo focus (0.3x) → Normal (1x). Ideal for high-impact button clicks.</li>
+          <li><strong>Bullet Time:</strong> High velocity (3x) → Matrix-style slow crawl (0.2x) → High velocity (3x).</li>
+          <li><strong>Jump-Cut Hyper:</strong> Fast-forward burst (4x to 8x) for long typing or loading screens.</li>
+        </ul>
+      </article>
+
+      <!-- Section: Auto Reframe -->
+      <article id="auto-reframe" class="docs-article">
+        <h2>📱 Smart Auto-Reframe (9:16 Shorts & TikTok)</h2>
+        <p>Repurpose widescreen landscape captures into vertical content without losing the action:</p>
+        <ul>
+          <li>When switching aspect ratio from 16:9 to 9:16, Recova Studio reads the recorded cursor coordinates.</li>
+          <li>The camera window centers dynamically around mouse clicks and active UI regions.</li>
+          <li>Configurable <em>Smoothing Factor</em> and <em>Deadzone Radius</em> prevent distracting micro-jitters, creating a smooth, handheld camera glide.</li>
+        </ul>
+      </article>
+
+      <!-- Section: Freeze Frames -->
+      <article id="freeze-frames" class="docs-article">
+        <h2>❄️ Freeze Frames & Filmstrip Visualizer</h2>
+        <p>Highlight important moments by freezing video playback while allowing voiceover and annotations to continue:</p>
+        <ul>
+          <li>Press <kbd>F</kbd> at any playhead position to insert a 2-second freeze frame.</li>
+          <li>Extend or shorten the freeze duration by dragging its edge on the timeline.</li>
+          <li>The Filmstrip Visualizer displays thumbnail frames along the timeline track for quick visual navigation.</li>
+        </ul>
+      </article>
+
+      <!-- Section: 3D Mockups -->
+      <article id="mockups" class="docs-article">
+        <h2>💻 3D Device Mockup Studio</h2>
+        <p>Give your videos an unmistakable Apple-style aesthetic with built-in hardware mockups:</p>
+        <ul>
+          <li><strong>Supported Devices:</strong> MacBook Pro 16", iPhone 16 Pro, iPad Pro 13", and Apple Studio Display.</li>
+          <li><strong>Dynamic 3D Camera Controls:</strong>
+            <ul>
+              <li><code>Pitch / Tilt</code>: Tilt the device screen forwards or backwards (-45° to +45°).</li>
+              <li><code>Yaw / Pan</code>: Angle the device sideways for an isometric 3D perspective.</li>
+              <li><code>Roll</code>: Subtle roll for dynamic action sequences.</li>
+              <li><code>Corner Radius & Depth</code>: Adjust physical chassis bezel and shadow blur.</li>
+            </ul>
+          </li>
+          <li><strong>Video & Gradient Wallpapers:</strong> Choose from curated gradient meshes, abstract dynamic light ribbons, or load custom MP4 video backdrops.</li>
+        </ul>
+      </article>
+
+      <!-- Section: Chroma Key -->
+      <article id="chroma-key" class="docs-article">
+        <h2>👁️ Chroma Key & AI Presenter Cutout</h2>
+        <p>Integrate your webcam overlay into the production seamlessly:</p>
+        <ul>
+          <li><strong>Green/Blue/Magenta Screen Keyer:</strong> High-precision color distance shader with edge feathering and despill suppression.</li>
+          <li><strong>AI Smart Cutout (No Green Screen):</strong> Offline neural segmentation isolates your body from any messy bedroom or office background.</li>
+          <li><strong>AI Eye Contact Correction:</strong> Subtle gaze realignment keeps your eyes focused on the viewer even while reading screen notes.</li>
+        </ul>
+      </article>
+
+      <!-- Section: 3D LUTs -->
+      <article id="lut-grading" class="docs-article">
+        <h2>🎨 Hollywood 3D LUT Color Grading</h2>
+        <p>Bring cinematic color depth to technical presentations and screencasts:</p>
+        <ul>
+          <li><strong>Full .CUBE Support:</strong> Load standard industry 17×17×17 or 33×33×33 .CUBE LUT files directly from DaVinci Resolve, Premiere Pro, or Final Cut.</li>
+          <li><strong>Curated Studio Presets:</strong> Teal & Orange, Golden Hour Warmth, Cyberpunk Neon, Vintage Film 35mm, and Clean B&W.</li>
+          <li><strong>Professional Color Scopes:</strong> Real-time RGB Waveform, Vectorscope, and Luminance Histogram ensure no clipped highlights or crushed shadows.</li>
+        </ul>
+      </article>
+
+      <!-- Section: Whisper Captions -->
+      <article id="whisper-captions" class="docs-article">
+        <h2>💬 CapCut-Style Karaoke Captions & Local Whisper AI</h2>
+        <p>Increase audience retention on social media with dynamic word-by-word highlighted captions:</p>
+        <ul>
+          <li><strong>100% Offline Whisper Model:</strong> Transcribe spoken speech locally without sending sensitive audio data to cloud servers.</li>
+          <li><strong>Word-by-Word Karaoke Sync:</strong> Each spoken word lights up with energetic colors (yellow, cyan, lime) at the exact millisecond it is uttered.</li>
+          <li><strong>Kinetic Animation Styles:</strong>
+            <ul>
+              <li><code>Pop-In</code>: Springy bounce on every new phrase.</li>
+              <li><code>Typewriter</code>: Fast letter-by-letter reveal.</li>
+              <li><code>Fade-Up</code>: Elegant upward float for professional lectures.</li>
+              <li><code>Glitch</code>: Energetic chromatic aberration for gaming and tech content.</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Section: Subtitle IO -->
+      <article id="subtitle-io" class="docs-article">
+        <h2>📄 .SRT & .WebVTT Subtitle Import / Export</h2>
+        <p>Recova Studio supports full bi-directional subtitle interchange:</p>
+        <ul>
+          <li><strong>Export:</strong> Export your transcribed captions as standard <code>.srt</code> (SubRip) or <code>.vtt</code> (WebVTT) files for YouTube, Vimeo, and video hosting platforms.</li>
+          <li><strong>Import:</strong> Drag-and-drop external subtitle files directly onto the timeline to overlay existing translations or captions.</li>
+        </ul>
+      </article>
+
+      <!-- Section: Audio Studio -->
+      <article id="audio-studio" class="docs-article">
+        <h2>🔊 Audio Mixer & EBU R128 Normalization</h2>
+        <p>Deliver balanced, broadcast-quality audio with zero harsh peaks or unintelligible whispers:</p>
+        <ul>
+          <li><strong>EBU R128 Loudness Mastering:</strong> Normalizes audio levels to YouTube standard (-14 LUFS) or European Broadcast standard (-23 LUFS) with a single click.</li>
+          <li><strong>Dynamic Processing:</strong> Built-in Noise Gate removes computer fan noise and keyboard clicks; Compressor tames sudden volume spikes.</li>
+          <li><strong>Procedural Sound Effects:</strong> Add sound effects (mouse clicks, notification dings, whoosh transitions) directly from the internal library.</li>
+        </ul>
+      </article>
+
+      <!-- Section: GPU Export -->
+      <article id="gpu-export" class="docs-article">
+        <h2>🚀 GPU Hardware Acceleration & 4K Export</h2>
+        <p>Render your final master at up to 10× real-time speed:</p>
+        <ul>
+          <li><strong>Encoders Supported:</strong> NVIDIA NVENC (H.264 / HEVC / AV1), Intel QuickSync Video (QSV), AMD AMF, and Apple VideoToolbox.</li>
+          <li><strong>Export Formats:</strong> MP4, MOV (ProRes 422), WebM (VP9), and High-Framerate animated GIF.</li>
+          <li><strong>YouTube Chapter Generator:</strong> Automatically formats timeline markers and zoom sections into YouTube-ready description timestamps.</li>
+        </ul>
+      </article>
+
+      <!-- Section: Shortcuts -->
+      <article id="shortcuts" class="docs-article">
+        <h2>⌨️ Complete Keyboard Shortcuts Cheat Sheet</h2>
+        <p>Supercharge your editing speed with these standard non-linear editing shortcuts:</p>
+        <div class="comparison-table-wrapper">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>Action</th>
+                <th>Windows Shortcut</th>
+                <th>macOS Shortcut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Play / Pause Playhead</td><td><kbd>Space</kbd></td><td><kbd>Space</kbd></td></tr>
+              <tr><td>Split Clip at Playhead</td><td><kbd>S</kbd> or <kbd>Ctrl+K</kbd></td><td><kbd>S</kbd> or <kbd>Cmd+K</kbd></td></tr>
+              <tr><td>Ripple Delete Clip (Gap Close)</td><td><kbd>Shift+Delete</kbd> or <kbd>X</kbd></td><td><kbd>Shift+Backspace</kbd> or <kbd>X</kbd></td></tr>
+              <tr><td>Standard Delete Clip</td><td><kbd>Delete</kbd> or <kbd>Backspace</kbd></td><td><kbd>Delete</kbd></td></tr>
+              <tr><td>Add Zoom Keyframe Region</td><td><kbd>Z</kbd></td><td><kbd>Z</kbd></td></tr>
+              <tr><td>Insert Freeze Frame</td><td><kbd>F</kbd></td><td><kbd>F</kbd></td></tr>
+              <tr><td>Open Speed Curves Ramp Dialog</td><td><kbd>Alt+R</kbd></td><td><kbd>Option+R</kbd></td></tr>
+              <tr><td>Undo Last Operation</td><td><kbd>Ctrl+Z</kbd></td><td><kbd>Cmd+Z</kbd></td></tr>
+              <tr><td>Redo Operation</td><td><kbd>Ctrl+Y</kbd> or <kbd>Ctrl+Shift+Z</kbd></td><td><kbd>Cmd+Shift+Z</kbd></td></tr>
+              <tr><td>Start Recording</td><td><kbd>Ctrl+Shift+R</kbd></td><td><kbd>Cmd+Shift+R</kbd></td></tr>
+              <tr><td>Stop Recording</td><td><kbd>Ctrl+Shift+S</kbd></td><td><kbd>Cmd+Shift+S</kbd></td></tr>
+              <tr><td>Export Video Master</td><td><kbd>Ctrl+E</kbd></td><td><kbd>Cmd+E</kbd></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- Section: Troubleshooting -->
+      <article id="troubleshooting" class="docs-article">
+        <h2>🔧 Troubleshooting & FAQ</h2>
+        
+        <h3>Q: Windows displays "Unknown Publisher" or Certificate Warning when installing MSIX.</h3>
+        <p>Because Recova Studio is an independent open-source release signed with a developer certificate, Windows SmartScreen may ask for confirmation:</p>
+        <ol>
+          <li>Right-click <code>Recova-Studio-v1.1.1.msix</code> → Properties → Digital Signatures tab.</li>
+          <li>Select the certificate → Details → View Certificate → Install Certificate.</li>
+          <li>Select <strong>Local Machine</strong> → Place certificate in <strong>Trusted Root Certification Authorities</strong>.</li>
+          <li>Alternatively, use <code>Recova-Studio-Setup-v1.1.0-x64.exe</code> which does not require root certificate installation.</li>
+        </ol>
+
+        <h3>Q: Does Whisper AI require an internet connection?</h3>
+        <p>No. Recova Studio bundles lightweight local Whisper ONNX / WASM runtimes. All speech-to-text recognition occurs 100% on your local machine with zero telemetry or network transmission.</p>
+
+        <h3>Q: Why is NVENC hardware acceleration greyed out?</h3>
+        <p>Ensure you have an NVIDIA GeForce GTX 1050 or newer GPU and your display driver is updated to version 530+ or newer. If no dedicated GPU is detected, Recova Studio seamlessly falls back to high-performance multi-threaded CPU encoding.</p>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-bottom" style="border-top: none; padding-top: 0;">
+      <div>
+        © 2026 <strong>Recova Studio Documentation</strong> • Maintained by <strong>Mohammad Sheikh Shahinur Rahman</strong>.
+      </div>
+      <div>
+        <a href="index.html" style="color: var(--accent-primary);">← Back to Product Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

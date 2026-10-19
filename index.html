@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recova Studio — Next-Gen Screen Recording & Pro NLE Studio</title>
+  <meta name="description" content="Recova Studio is a next-generation screen recorder and non-linear video editor for Windows and Mac. Featuring 3D device mockups, CapCut-style karaoke captions, offline Whisper AI, 3D LUTs, and GPU hardware acceleration.">
+  <link rel="icon" type="image/png" href="assets/app-icons/recordly-32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow"></div>
+  <div class="ambient-glow-bottom"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <img src="assets/recova-logo.png" alt="Recova Studio Logo" class="brand-icon">
+        <span>Recova<span style="color: var(--accent-primary);">Studio</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#download" class="nav-link">Download</a></li>
+        <li><a href="#comparison" class="nav-link">Comparison</a></li>
+        <li><a href="#specs" class="nav-link">Tech Specs</a></li>
+        <li><a href="docs.html" class="nav-link">Documentation Wiki</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="#download" class="btn btn-primary btn-sm">Get Recova v1.1.1</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge-wrap">
+          <span class="badge badge-gradient">
+            ✨ Recova Studio v1.1.1 is here • Windows & macOS Universal
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Screen Recording Meets <br>
+          <span class="accent-gradient-text">Hollywood Video Editing</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Capture desktop audio and screen at butter-smooth 60FPS, wrap footage in stunning 3D device mockups, generate CapCut-style karaoke captions with offline Whisper AI, and edit with pro speed curves.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-v1.1.1.msix" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download MSIX v1.1.1 (x64)
+          </a>
+          <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Setup-v1.1.0-x64.exe" class="btn btn-secondary btn-lg">
+            Download EXE Setup (v1.1.0)
+          </a>
+          <a href="docs.html" class="btn btn-secondary btn-lg">
+            Explore Documentation Wiki 📖
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span>🛡️ Signed Windows Package</span>
+          <span>⚡ NVIDIA NVENC GPU Accelerated</span>
+          <span>🔒 100% Offline & Private AI</span>
+        </div>
+
+        <!-- 3D Interactive App Mockup Preview -->
+        <div class="preview-showcase">
+          <div class="app-frame">
+            <div class="frame-header">
+              <div class="frame-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="frame-title">Recova Studio — Project: Cinematic_Workflow_Demo.rcv</div>
+              <div class="frame-chips">
+                <span class="chip">NVENC 4K60</span>
+                <span class="chip">EBU R128</span>
+                <span class="chip">3D LUT Active</span>
+              </div>
+            </div>
+
+            <div class="frame-body">
+              <div class="mockup-canvas-wrapper">
+                <div class="mockup-3d-screen">
+                  <img src="assets/energy-17.jpg" alt="Video Canvas Preview">
+                  <div class="mockup-overlay-badge">Dynamic 3D Tilt: 12°</div>
+                  
+                  <!-- Floating Cursor -->
+                  <svg class="mockup-cursor" viewBox="0 0 24 24" fill="#ffffff" stroke="#000000" stroke-width="1.5">
+                    <path d="M3 3l7 18 3-7 7-3L3 3z"/>
+                  </svg>
+
+                  <!-- Floating Webcam Bubble -->
+                  <div class="mockup-webcam-bubble">
+                    <img src="assets/glassmorphism-3.jpg" alt="Webcam Overlay">
+                  </div>
+
+                  <!-- Word-by-Word Karaoke Subtitle -->
+                  <div class="mockup-karaoke-cue">
+                    <span class="karaoke-active">Generate</span> cinematic videos in minutes ✨
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pro Multi-Track Timeline -->
+              <div class="mockup-timeline">
+                <div class="timeline-controls">
+                  <div class="timeline-tools">
+                    <button class="tool-btn">Split [S]</button>
+                    <button class="tool-btn">Ripple Delete [Shift+Del]</button>
+                    <button class="tool-btn">Speed Ramp [Alt+R]</button>
+                    <button class="tool-btn">Freeze Frame [F]</button>
+                  </div>
+                  <span>00:04.28 / 00:24.00 (60 FPS)</span>
+                </div>
+
+                <div class="timeline-tracks">
+                  <div class="timeline-track">
+                    <span>V1 Screen</span>
+                    <div class="track-block block-video">Screen Capture (WGC 4K)</div>
+                    <div class="track-block block-zoom">Smooth Zoom (2.2x)</div>
+                  </div>
+                  <div class="timeline-track">
+                    <span>A1 Audio</span>
+                    <div class="track-block block-audio">System WASAPI Loopback + Noise Gate</div>
+                  </div>
+                  <div class="timeline-track">
+                    <span>CC Text</span>
+                    <div class="track-block block-captions">Auto-Captions (Whisper AI Karaoke)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="features" class="container" style="padding: 4rem 0;">
+      <div class="section-header">
+        <span class="section-tag">Unmatched Power</span>
+        <h2>Engineered for Creators, Developers & Educators</h2>
+        <p class="section-desc">Everything you need to turn raw desktop recordings into polished, viral-ready video productions.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="card-icon purple">💻</div>
+          <h3>3D Device Mockups & Dynamic Tilt</h3>
+          <p>Instantly wrap recordings inside ultra-realistic MacBook Pro, iPhone 16 Pro, iPad Pro, and Studio Display 3D frames with customizable camera perspective, depth, and shadow.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">MacBook M3 Frame</span>
+            <span class="tag-pill">iPhone 16 Pro</span>
+            <span class="tag-pill">3D Tilt & Roll</span>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="card-icon blue">💬</div>
+          <h3>CapCut-Style Karaoke Auto-Captions</h3>
+          <p>Generate glowing, word-by-word animated subtitles using local offline Whisper AI. Full support for kinetic pop, typewriter, slide, and standard .SRT / .VTT import & export.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">Offline Whisper AI</span>
+            <span class="tag-pill">Word-Level Sync</span>
+            <span class="tag-pill">SRT & VTT IO</span>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="card-icon cyan">🎨</div>
+          <h3>Hollywood 3D LUT Color Grading</h3>
+          <p>Transform drab desktop screen recordings with professional 3D LUTs (.CUBE). Comes with Teal & Orange, Golden Hour, Cyberpunk, and Vintage Cine with live waveform and histogram scopes.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">.CUBE LUT Engine</span>
+            <span class="tag-pill">Waveform Scopes</span>
+            <span class="tag-pill">Color Match</span>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="card-icon amber">⚡</div>
+          <h3>Speed Curves & Velocity Ramping</h3>
+          <p>Create dramatic pacing with CapCut-style speed curves: Montage, Hero Shot, Bullet Time, and Jump-Cut. Modulate playback speed from 0.1x ultra slow-mo to 10x hyper-lapse smoothly.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">Bézier Speed Curves</span>
+            <span class="tag-pill">Hero & Bullet Presets</span>
+            <span class="tag-pill">Optical Flow Blur</span>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="card-icon emerald">🎚️</div>
+          <h3>Ripple Edit & Gap Removal</h3>
+          <p>Trim mistakes with zero dead air. Ripple Delete automatically pulls forward all downstream clips, audio layers, zoom regions, annotations, and subtitles seamlessly.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">Instant Gap Close</span>
+            <span class="tag-pill">Magnetic Snapping</span>
+            <span class="tag-pill">NLE Shortcut Engine</span>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="card-icon rose">📱</div>
+          <h3>Smart Auto-Reframe (9:16 Shorts)</h3>
+          <p>Convert 16:9 desktop captures into vertical 9:16 reels for TikTok, YouTube Shorts, and Instagram. The intelligent camera smoothly tracks mouse cursor movement automatically.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">TikTok & Reels</span>
+            <span class="tag-pill">Cursor Tracking</span>
+            <span class="tag-pill">Smooth Glide Camera</span>
+          </div>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="feature-card">
+          <div class="card-icon purple">🔊</div>
+          <h3>Audio Studio & EBU R128 Normalization</h3>
+          <p>Broadcast-ready sound. Features studio compressor, noise gate, 10-band equalizer, procedural sound effects (click, whoosh, pop), and one-click EBU R128 loudness mastering.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">EBU R128 Loudness</span>
+            <span class="tag-pill">Noise Gate</span>
+            <span class="tag-pill">Procedural SFX</span>
+          </div>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="feature-card">
+          <div class="card-icon blue">🚀</div>
+          <h3>NVIDIA NVENC Hardware Export</h3>
+          <p>Blazing-fast rendering powered by NVIDIA NVENC, Intel QuickSync, and Apple Silicon VideoToolbox. Export in 4K60 MP4, ProRes 422, WebM, and animated GIF effortlessly.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">NVIDIA NVENC</span>
+            <span class="tag-pill">4K 60FPS</span>
+            <span class="tag-pill">ProRes & WebM</span>
+          </div>
+        </div>
+
+        <!-- Feature 9 -->
+        <div class="feature-card">
+          <div class="card-icon cyan">🎥</div>
+          <h3>AI Presenter Cutout & Chroma Key</h3>
+          <p>Overlay your face anywhere on screen with or without a green screen. Real-time background segmentation and green/blue/magenta screen despill suppression built right in.</p>
+          <div class="feature-tags">
+            <span class="tag-pill">Background Cutout</span>
+            <span class="tag-pill">Green Screen Keyer</span>
+            <span class="tag-pill">Eye Contact AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="download" class="download-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Downloads & Releases</span>
+          <h2>Get Recova Studio Today</h2>
+          <p class="section-desc">Choose the installation package that best fits your workflow.</p>
+        </div>
+
+        <div class="download-cards-grid">
+          <!-- MSIX Package (Recommended) -->
+          <div class="dl-card highlight">
+            <span class="dl-badge-top">Recommended</span>
+            <div class="dl-header">
+              <div class="dl-icon">📦</div>
+              <div class="dl-title-wrap">
+                <h3>Windows MSIX</h3>
+                <span>v1.1.1 • Windows 10 & 11 (64-bit)</span>
+              </div>
+            </div>
+            <p>Modern Windows Store-style package. Clean 1-click install, sandboxed security, and zero registry clutter.</p>
+            <ul class="dl-features">
+              <li><i>✓</i> Signed Modern Appx/MSIX Container</li>
+              <li><i>✓</i> Clean auto-update architecture</li>
+              <li><i>✓</i> Native Windows 11 Fluent integration</li>
+              <li><i>✓</i> Package size: ~297 MB</li>
+            </ul>
+            <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-v1.1.1.msix" class="btn btn-primary">
+              Download MSIX (v1.1.1)
+            </a>
+            <div class="dl-meta-footer">
+              <span>Recova-Studio-v1.1.1.msix</span>
+              <span>SHA-256 Verified</span>
+            </div>
+          </div>
+
+          <!-- Setup Installer EXE -->
+          <div class="dl-card">
+            <div class="dl-header">
+              <div class="dl-icon">⚙️</div>
+              <div class="dl-title-wrap">
+                <h3>Windows Setup EXE</h3>
+                <span>v1.1.0 • Windows 10 & 11 (64-bit)</span>
+              </div>
+            </div>
+            <p>Traditional desktop installer with custom install directory selector and Start Menu shortcuts.</p>
+            <ul class="dl-features">
+              <li><i>✓</i> Full NSIS Setup Wizard</li>
+              <li><i>✓</i> Desktop & Start Menu Shortcuts</li>
+              <li><i>✓</i> File association for .rcv project files</li>
+              <li><i>✓</i> Package size: ~222 MB</li>
+            </ul>
+            <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Setup-v1.1.0-x64.exe" class="btn btn-secondary">
+              Download Setup EXE (v1.1.0)
+            </a>
+            <div class="dl-meta-footer">
+              <span>Recova-Studio-Setup-v1.1.0-x64.exe</span>
+              <span>x64 Architecture</span>
+            </div>
+          </div>
+
+          <!-- Portable Executable -->
+          <div class="dl-card">
+            <div class="dl-header">
+              <div class="dl-icon">🚀</div>
+              <div class="dl-title-wrap">
+                <h3>Portable Executable</h3>
+                <span>v1.1.0 • Standalone USB Drive</span>
+              </div>
+            </div>
+            <p>Zero installation required. Run directly from any USB flash drive or temporary directory without admin rights.</p>
+            <ul class="dl-features">
+              <li><i>✓</i> Plug-and-play without installation</li>
+              <li><i>✓</i> No administrator privileges needed</li>
+              <li><i>✓</i> Leaves zero traces on host computer</li>
+              <li><i>✓</i> Package size: ~218 MB</li>
+            </ul>
+            <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Portable-v1.1.0-x64.exe" class="btn btn-secondary">
+              Download Portable EXE
+            </a>
+            <div class="dl-meta-footer">
+              <span>Recova-Studio-Portable-v1.1.0-x64.exe</span>
+              <span>Zero-Install</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checksums Box -->
+        <div class="checksum-box">
+          <div class="checksum-header">
+            <h4>🔐 Official Release SHA-256 Checksums (v1.1.1 / v1.1.0)</h4>
+            <button class="btn btn-secondary btn-sm" onclick="copyToClipboard('310e5ead1ad215d1d701fde1be8300c2b9a162f385a4de07b2a38385de39bb', this)">Copy MSIX Hash</button>
+          </div>
+          <div class="checksum-code">
+# Recova Studio v1.1.1 MSIX:<br>
+310e5ead1ad215d1d701fde1be8300c2b9a162f385a4de07b2a38385de39bb  Recova-Studio-v1.1.1.msix<br><br>
+# Recova Studio v1.1.0 Setup EXE:<br>
+9d9557e844cef25ee0b1d15183c7621183acc9cb98950eca3b82e245938ad5f2  Recova-Studio-Setup-v1.1.0-x64.exe<br><br>
+# Recova Studio v1.1.0 Portable EXE:<br>
+cefe084b44d8bfc153fa3c5a40099dcbeea2da3fd77996c81e53288dc416179c  Recova-Studio-Portable-v1.1.0-x64.exe
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section id="comparison" class="container" style="padding: 4rem 0;">
+      <div class="section-header">
+        <span class="section-tag">Direct Comparison</span>
+        <h2>Why Creators Switch to Recova Studio</h2>
+        <p class="section-desc">See how Recova Studio outpaces traditional recording software and web-only tools.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Feature Capability</th>
+              <th class="highlight-col">Recova Studio</th>
+              <th>Screen Studio</th>
+              <th>Camtasia</th>
+              <th>OBS Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Operating System</strong></td>
+              <td class="highlight-col"><strong>Windows & macOS</strong></td>
+              <td>macOS only (limited web)</td>
+              <td>Windows & macOS</td>
+              <td>Windows, macOS, Linux</td>
+            </tr>
+            <tr>
+              <td><strong>3D Device Mockup Renders</strong></td>
+              <td class="highlight-col"><span class="check">✓ Built-in (3D Tilt)</span></td>
+              <td><span class="check">✓ Flat frames only</span></td>
+              <td><span class="cross">✗ Manual plugins</span></td>
+              <td><span class="cross">✗ Not supported</span></td>
+            </tr>
+            <tr>
+              <td><strong>CapCut Karaoke Captions</strong></td>
+              <td class="highlight-col"><span class="check">✓ Offline Whisper AI</span></td>
+              <td><span class="cross">✗ Cloud only</span></td>
+              <td><span class="cross">✗ Basic text</span></td>
+              <td><span class="cross">✗ Not supported</span></td>
+            </tr>
+            <tr>
+              <td><strong>3D LUT (.CUBE) Color Grading</strong></td>
+              <td class="highlight-col"><span class="check">✓ Built-in with Scopes</span></td>
+              <td><span class="cross">✗ No</span></td>
+              <td><span class="check">✓ Basic filters</span></td>
+              <td><span class="check">✓ Stream filters</span></td>
+            </tr>
+            <tr>
+              <td><strong>Bézier Speed Curves & Ramping</strong></td>
+              <td class="highlight-col"><span class="check">✓ Hero, Bullet & Montage</span></td>
+              <td><span class="cross">✗ Linear only</span></td>
+              <td><span class="cross">✗ Linear only</span></td>
+              <td><span class="cross">✗ Recording only</span></td>
+            </tr>
+            <tr>
+              <td><strong>Ripple Delete & Auto-Gap Removal</strong></td>
+              <td class="highlight-col"><span class="check">✓ Full NLE Support</span></td>
+              <td><span class="cross">✗ Trim only</span></td>
+              <td><span class="check">✓ Supported</span></td>
+              <td><span class="cross">✗ No editor</span></td>
+            </tr>
+            <tr>
+              <td><strong>Audio Studio (EBU R128 & SFX)</strong></td>
+              <td class="highlight-col"><span class="check">✓ Integrated Suite</span></td>
+              <td><span class="cross">✗ Basic gain</span></td>
+              <td><span class="check">✓ Good audio tools</span></td>
+              <td><span class="check">✓ VST plugins</span></td>
+            </tr>
+            <tr>
+              <td><strong>GPU Hardware Acceleration</strong></td>
+              <td class="highlight-col"><span class="check">✓ NVENC + QuickSync</span></td>
+              <td><span class="check">✓ Metal</span></td>
+              <td><span class="check">✓ Hardware assist</span></td>
+              <td><span class="check">✓ NVENC / AMF</span></td>
+            </tr>
+            <tr>
+              <td><strong>Privacy & Offline Operation</strong></td>
+              <td class="highlight-col"><span class="check">✓ 100% Offline Local</span></td>
+              <td><span class="cross">✗ Account / Cloud sync</span></td>
+              <td><span class="check">✓ Offline local</span></td>
+              <td><span class="check">✓ Offline local</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Technical Specs & Requirements -->
+    <section id="specs" class="container" style="padding: 2rem 0 5rem;">
+      <div class="section-header">
+        <span class="section-tag">Specifications</span>
+        <h2>System Requirements</h2>
+        <p class="section-desc">Optimized for maximum efficiency and low CPU usage.</p>
+      </div>
+
+      <div class="sys-req-grid">
+        <div class="sys-card">
+          <h4>Minimum Configuration</h4>
+          <ul>
+            <li><strong>OS:</strong> Windows 10 (Build 19041+) 64-bit or macOS 12 Monterey</li>
+            <li><strong>CPU:</strong> Intel Core i3 8th Gen / AMD Ryzen 3 / Apple M1</li>
+            <li><strong>RAM:</strong> 4 GB RAM</li>
+            <li><strong>Disk:</strong> 600 MB free space</li>
+            <li><strong>Display:</strong> 1280 × 720 minimum resolution</li>
+          </ul>
+        </div>
+
+        <div class="sys-card">
+          <h4>Recommended for 4K60 Production</h4>
+          <ul>
+            <li><strong>OS:</strong> Windows 11 (23H2+) or macOS 14 Sonoma / Sequoia</li>
+            <li><strong>CPU:</strong> Intel Core i7 12th Gen / AMD Ryzen 7 / Apple M2/M3</li>
+            <li><strong>RAM:</strong> 16 GB DDR4/DDR5</li>
+            <li><strong>GPU:</strong> NVIDIA RTX 3060+ with NVENC (or Apple Silicon)</li>
+            <li><strong>Storage:</strong> Fast NVMe SSD</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="assets/recova-logo.png" alt="Recova Studio Logo" class="brand-icon">
+            <span>Recova<span style="color: var(--accent-primary);">Studio</span></span>
+          </a>
+          <p>
+            The next-generation desktop screen recorder and non-linear video editing suite. Built with performance, privacy, and precision in mind.
+          </p>
+        </div>
+
+        <div class="footer-group">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features Showcase</a></li>
+            <li><a href="#download">Downloads (v1.1.1)</a></li>
+            <li><a href="#comparison">Versus Comparison</a></li>
+            <li><a href="#specs">System Requirements</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="docs.html">User Wiki & Guide</a></li>
+            <li><a href="docs.html#shortcuts">Keyboard Shortcuts</a></li>
+            <li><a href="docs.html#troubleshooting">MSIX Installation Guide</a></li>
+            <li><a href="docs.html#lut-grading">3D LUT Grading</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group">
+          <h4>Community & Project</h4>
+          <ul>
+            <li><a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+            <li><a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases" target="_blank" rel="noopener noreferrer">Release History</a></li>
+            <li><a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/issues" target="_blank" rel="noopener noreferrer">Report an Issue</a></li>
+            <li><a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">License & Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>Recova Studio</strong>. Developed by <strong>Mohammad Sheikh Shahinur Rahman</strong> (IT Amadersomaj Inc). All rights reserved.
+        </div>
+        <div>
+          Crafted with WebGPU, PixiJS, Electron, and Native C++ Media Foundation.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
