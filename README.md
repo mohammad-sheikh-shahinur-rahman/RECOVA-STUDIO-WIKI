@@ -5,9 +5,10 @@
   # 🌟 Recova Studio
   ### Next-Generation Screen Recording & Pro NLE Studio for Windows & Mac
 
-  [![Release](https://img.shields.io/badge/Release-v1.1.1-6366f1?style=for-the-badge&logo=windows)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases)
+  [![Official Website](https://img.shields.io/badge/Official%20Website-Live%20Portal-06b6d4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/)
+  [![Release](https://img.shields.io/badge/Release-v1.1.1-6366f1?style=for-the-badge&logo=github)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases)
   [![Microsoft Store](https://img.shields.io/badge/Microsoft%20Store-9pkq761db2ln-0078d4?style=for-the-badge&logo=microsoft)](https://apps.microsoft.com/detail/9pkq761db2ln?hl=en-GB&gl=BD)
-  [![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11%20%7C%20macOS-blue?style=for-the-badge)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI)
+  [![Documentation](https://img.shields.io/badge/Docs%20Wiki-Online%20Guide-8b5cf6?style=for-the-badge&logo=gitbook&logoColor=white)](https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/docs.html)
   [![License](https://img.shields.io/badge/License-Proprietary%20%2F%20Open%20Docs-10b981?style=for-the-badge)](LICENSE)
   [![Author](https://img.shields.io/badge/Lead%20Engineer-Mohammad%20Sheikh%20Shahinur%20Rahman-purple?style=for-the-badge)](https://github.com/mohammad-sheikh-shahinur-rahman)
 
@@ -17,9 +18,9 @@
   </p>
 
   <p align="center">
-    <a href="https://apps.microsoft.com/detail/9pkq761db2ln?hl=en-GB&gl=BD"><strong>🛍️ Get on Microsoft Store »</strong></a>
+    <a href="https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/"><strong>🌐 Visit Official Live Website »</strong></a>
     &nbsp;•&nbsp;
-    <a href="https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/"><strong>🌐 Visit Official Website & Portal »</strong></a>
+    <a href="https://apps.microsoft.com/detail/9pkq761db2ln?hl=en-GB&gl=BD"><strong>🛍️ Get on Microsoft Store »</strong></a>
     &nbsp;•&nbsp;
     <a href="https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/docs.html"><strong>📖 Read Documentation Wiki »</strong></a>
     &nbsp;•&nbsp;
@@ -30,17 +31,29 @@
 
 ---
 
+> 🚀 **Official Live Website & Portal:**  
+> Explore the live interactive portal with screenshot tours, guides, and feature showcases at **[https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/](https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/)**
+
+<div align="center">
+  <a href="https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/">
+    <img src="assets/recova-editor-ui.png" alt="Recova Studio Editor Interface" style="border-radius: 12px; max-width: 95%; box-shadow: 0 20px 50px rgba(0,0,0,0.6);" />
+  </a>
+  <p><i>Live Interactive Interface Tour & Documentation available at <a href="https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/">mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI</a></i></p>
+</div>
+
+---
+
 ## ⚡ Official Download Links (v1.1.1)
 
 | Format | Channel / File | Size | Architecture | Direct Download |
 | :--- | :--- | :--- | :--- | :--- |
+| **Official Website** | Web Portal & Docs | Free Online | All Browsers | [🌐 **Visit Live Website**](https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/) |
 | **Microsoft Store (Official)** | Store App (9pkq761db2ln) | Silent Auto-Update | Windows 10/11 x64 | [🛍️ **Get from Microsoft Store**](https://apps.microsoft.com/detail/9pkq761db2ln?hl=en-GB&gl=BD) |
 | **Windows MSIX (Manual)** | `Recova-Studio-v1.1.1.msix` | `~297 MB` | Windows 10/11 x64 | [📥 Download MSIX](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-v1.1.1.msix) |
-| **Windows Setup Installer** | `Recova-Studio-Setup-v1.1.0-x64.exe` | `~222 MB` | Windows 10/11 x64 | [📥 Download Setup EXE](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Setup-v1.1.0-x64.exe) |
+| **Windows Setup Installer** | `Recova-Studio-Setup-v1.1.1-x64.exe` | `~220 MB` | Windows 10/11 x64 | [📥 Download Setup EXE](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Setup-v1.1.1-x64.exe) |
 | **Portable Executable** | `Recova-Studio-Portable-v1.1.0-x64.exe` | `~218 MB` | Standalone USB / Any PC | [📥 Download Portable EXE](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Portable-v1.1.0-x64.exe) |
-| **macOS Apple Silicon** | `Recova-Studio-arm64.dmg` | `~180 MB` | macOS 12+ (M1/M2/M3/M4) | [🍏 Download DMG (arm64)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-arm64.dmg) |
-| **macOS Intel** | `Recova-Studio-x64.dmg` | `~185 MB` | macOS 12+ (Intel Core) | [🍏 Download DMG (x64)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-x64.dmg) |
-| **Linux Standalone** | `Recova-Studio-linux-x64.AppImage` | `~140 MB` | Linux x86_64 | [🐧 Download AppImage](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-linux-x64.AppImage) |
+| **macOS Intel** | `Recova-Studio-x64.dmg` | `~240 MB` | macOS 12+ (Intel Core) | [🍏 Download DMG (x64)](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-x64.dmg) |
+| **Linux Standalone** | `Recova-Studio-linux-x64.AppImage` | `~247 MB` | Linux x86_64 | [🐧 Download AppImage](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-linux-x64.AppImage) |
 | **Integrity Checksums** | `SHA256SUMS.txt` | `~1 KB` | All Builds | [📄 View Checksums](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/SHA256SUMS.txt) |
 
 ---
@@ -93,9 +106,10 @@
 ## 🔐 Cryptographic Checksums (SHA-256)
 
 ```text
+cb3df86c05984a4f5fba4e934a1a3585b3685f03a9f7358188e0c573b2b80a5a  Recova-Studio-x64.dmg
+f3e1b6acdf6c507dc765aae243fa65e99795aa094744c23473cde2afbd016044  Recova-Studio-linux-x64.AppImage
+470d68fcb2a1a6343e54391572d479ff02ee7940a267a3e5d66940110116cb1a  Recova-Studio-Setup-v1.1.1-x64.exe
 310e5ead1ad215d1d701fde1be8300c2b9a162f385a4de07b2a38385de39bb  Recova-Studio-v1.1.1.msix
-310e5ead1ad215d1d701fde1be8300c2b9a162f385a4de07b2a38385de39bb  Recova Studio-v1.1.1.msix
-9d9557e844cef25ee0b1d15183c7621183acc9cb98950eca3b82e245938ad5f2  Recova-Studio-Setup-v1.1.0-x64.exe
 cefe084b44d8bfc153fa3c5a40099dcbeea2da3fd77996c81e53288dc416179c  Recova-Studio-Portable-v1.1.0-x64.exe
 ```
 
@@ -124,6 +138,15 @@ cefe084b44d8bfc153fa3c5a40099dcbeea2da3fd77996c81e53288dc416179c  Recova-Studio-
 - **Memory:** 4 GB RAM minimum (16 GB recommended for 4K60 editing)
 - **Graphics:** NVIDIA GeForce GTX 1050 or higher with NVENC support, Intel Iris Xe / Arc, AMD Radeon RX 5000+, or Apple Silicon GPU
 - **Storage:** 600 MB free hard drive space (Fast NVMe SSD recommended for 4K capture)
+
+---
+
+## 🌐 Quick Links & Web Portal
+
+- **Official Live Website:** [https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/](https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/)
+- **Documentation Wiki:** [https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/docs.html](https://mohammad-sheikh-shahinur-rahman.github.io/RECOVA-STUDIO-WIKI/docs.html)
+- **Microsoft Store Listing:** [https://apps.microsoft.com/detail/9pkq761db2ln?hl=en-GB&gl=BD](https://apps.microsoft.com/detail/9pkq761db2ln?hl=en-GB&gl=BD)
+- **GitHub Releases:** [https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases](https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases)
 
 ---
 
