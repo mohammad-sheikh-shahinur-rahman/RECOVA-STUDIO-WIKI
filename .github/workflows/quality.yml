@@ -1,0 +1,33 @@
+name: Website Code Quality
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-validate:
+    name: Validate Website Integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify Core Web Files
+        run: |
+          test -f index.html || (echo "index.html missing" && exit 1)
+          test -f docs.html || (echo "docs.html missing" && exit 1)
+          test -f style.css || (echo "style.css missing" && exit 1)
+          test -f app.js || (echo "app.js missing" && exit 1)
+          test -f .nojekyll || (echo ".nojekyll missing" && exit 1)
+          echo "All core assets and documents are present and validated!"
