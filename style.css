@@ -230,6 +230,20 @@ a {
   transform: translateY(-2px);
 }
 
+.btn-store {
+  background: #0078d4;
+  color: #ffffff;
+  border-color: #0078d4;
+  box-shadow: 0 4px 18px rgba(0, 120, 212, 0.4);
+}
+
+.btn-store:hover {
+  background: #106ebe;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 26px rgba(0, 120, 212, 0.6);
+  color: #ffffff;
+}
+
 .btn-sm {
   padding: 0.5rem 0.9rem;
   font-size: 0.85rem;
