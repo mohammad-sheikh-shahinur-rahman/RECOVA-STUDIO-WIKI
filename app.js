@@ -69,7 +69,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observerSections.forEach((section) => observer.observe(section));
   }
+
+  // 4. Interactive App Interface Screenshots Showcase Switcher
+  const tabBtns = document.querySelectorAll('.ui-tab-btn');
+  const tourImg = document.getElementById('uiTourImg');
+  const tourTitle = document.getElementById('uiTourTitle');
+  const tourDesc = document.getElementById('uiTourDesc');
+
+  if (tabBtns.length > 0 && tourImg && tourTitle && tourDesc) {
+    tabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const newImg = btn.getAttribute('data-img');
+        const newTitle = btn.getAttribute('data-title');
+        const newDesc = btn.getAttribute('data-desc');
+
+        tourImg.style.opacity = '0';
+        tourImg.style.transform = 'scale(0.99)';
+        setTimeout(() => {
+          tourImg.src = newImg;
+          tourTitle.innerText = newTitle;
+          tourDesc.innerText = newDesc;
+          tourImg.style.opacity = '1';
+          tourImg.style.transform = 'scale(1)';
+        }, 150);
+      });
+    });
+  }
 });
+
 
 // Helper: Copy to Clipboard
 function copyToClipboard(text, buttonElement) {

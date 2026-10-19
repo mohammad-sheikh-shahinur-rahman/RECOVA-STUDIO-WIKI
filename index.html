@@ -160,30 +160,71 @@
       </div>
     </section>
 
-    <!-- Real App Interface Showcase -->
+    <!-- Real App Interface Interactive Showcase -->
     <section class="container" style="padding: 2rem 0 4rem;">
       <div class="section-header">
-        <span class="section-tag">App Interface</span>
+        <span class="section-tag">Interactive App Interface</span>
         <h2>Designed for Speed, Precision & Power</h2>
-        <p class="section-desc">Take a look inside the Recova Studio professional video editor, multi-track timeline, and AI captions studio.</p>
+        <p class="section-desc">Click through the tabs below to explore Recova Studio's video editor, AI captions, multi-track timeline, motion cursor effects, and 4K export studio.</p>
       </div>
 
-      <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.25rem; box-shadow: 0 25px 60px rgba(0,0,0,0.7); overflow: hidden; margin-bottom: 2rem;">
-        <img src="assets/recova-editor-ui.png" alt="Recova Studio Professional Editor UI" style="width: 100%; height: auto; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); display: block;">
+      <!-- Screenshot Tabs Navigation -->
+      <div class="ui-tour-tabs">
+        <button class="ui-tab-btn active" data-img="assets/recova-editor-ui.png" data-title="🎬 Video Editor & 3D Canvas" data-desc="Live playback preview, timeline zooming, viral stickers, dynamic 3D camera tilt, and instant canvas zoom.">
+          <span>🎬</span> Editor & Canvas
+        </button>
+        <button class="ui-tab-btn" data-img="assets/recova-captions-ui.png" data-title="💬 Whisper AI Captions & Subtitles" data-desc="Offline speech-to-text, word-by-word karaoke highlighting, filler word removal, and instant SRT/VTT subtitle export.">
+          <span>💬</span> AI Captions & SRT
+        </button>
+        <button class="ui-tab-btn" data-img="assets/recova-timeline-ui.png" data-title="🎛️ Multi-Track Magnetic Timeline" data-desc="Frame-accurate scrubbing, magnetic snapping, in/out points, ripple delete [Shift+Del], and 1.8x speed ramping badges.">
+          <span>🎛️</span> Pro Timeline
+        </button>
+        <button class="ui-tab-btn" data-img="assets/Screenshot-02-Motion-Cursor-FX.png" data-title="🖱️ Motion Cursor & Tactile Audio FX" data-desc="Custom cursor arrows, tactile mechanical click sound effects, click bounce physics, and spotlight focus dimming.">
+          <span>🖱️</span> Motion Cursor FX
+        </button>
+        <button class="ui-tab-btn" data-img="assets/recova-audio-ui.png" data-title="🔊 Broadcast Audio & Synced SFX" data-desc="1-click action-synced whoosh/swoosh SFX, EBU R128 (-14 LUFS) broadcast loudness normalization, and studio EQ.">
+          <span>🔊</span> Audio & SFX
+        </button>
+        <button class="ui-tab-btn" data-img="assets/Screenshot-04-Export-Presets.png" data-title="⚡ Hardware NVENC & Export Studio" data-desc="GPU-accelerated NVIDIA NVENC 4K60 export, bitrate controls, and presets for YouTube, TikTok, Reels, and Shorts.">
+          <span>⚡</span> 4K Export
+        </button>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem;">
-          <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem; font-size: 1.1rem;">🎛️ Multi-Track Timeline with Magnetic Snapping</h4>
-          <p style="font-size: 0.95rem;">Independent video, audio, caption, and zoom tracks with frame-accurate scrubbing, split [S], and ripple delete [Shift+Del].</p>
+      <!-- Active Screenshot Showcase Card -->
+      <div class="ui-tour-card">
+        <div class="ui-tour-header">
+          <div class="frame-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="ui-tour-title" id="uiTourTitle">🎬 Video Editor & 3D Canvas</div>
+          <div class="frame-chips">
+            <span class="chip">Recova Studio v1.1.1</span>
+            <span class="chip">DirectX 12 / WebGPU</span>
+          </div>
         </div>
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem;">
-          <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 1.1rem;">💬 Offline Whisper AI Captions</h4>
-          <p style="font-size: 0.95rem;">Automated word-by-word karaoke highlighting, filler word removal, kinetic pop-in animations, and SRT/VTT import/export.</p>
+        <div class="ui-tour-screen">
+          <img id="uiTourImg" src="assets/recova-editor-ui.png" alt="Recova Studio Professional Editor UI">
         </div>
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem;">
-          <h4 style="color: var(--accent-emerald); margin-bottom: 0.5rem; font-size: 1.1rem;">🔊 Broadcast Audio Studio & 3D LUTs</h4>
-          <p style="font-size: 0.95rem;">EBU R128 loudness normalization (-14 LUFS), noise gate, compressor, and real-time .CUBE 3D LUT Hollywood grading.</p>
+        <div class="ui-tour-footer">
+          <p id="uiTourDesc">Live playback preview, timeline zooming, viral stickers, dynamic 3D camera tilt, and instant canvas zoom.</p>
+        </div>
+      </div>
+
+      <!-- Feature Highlight Badges -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 2rem;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+          <h4 style="color: var(--accent-cyan); margin-bottom: 0.4rem; font-size: 1.05rem;">🎛️ Magnetic Snap & Ripple Delete</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">Multi-track scrubbing with instant [S] split cut and zero-gap ripple delete closing dead air seamlessly.</p>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+          <h4 style="color: var(--accent-secondary); margin-bottom: 0.4rem; font-size: 1.05rem;">💬 100% Offline Whisper AI</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">Speech recognition runs on your CPU/GPU without cloud uploads, subscriptions, or latency.</p>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+          <h4 style="color: var(--accent-emerald); margin-bottom: 0.4rem; font-size: 1.05rem;">⚡ 4K60 NVIDIA NVENC & 3D LUTs</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">Hardware-accelerated rendering and Hollywood .CUBE color grading scopes in real-time.</p>
         </div>
       </div>
     </section>
@@ -376,7 +417,7 @@
               <div class="dl-icon">⚙️</div>
               <div class="dl-title-wrap">
                 <h3>Windows Setup EXE</h3>
-                <span>v1.1.0 • Windows 10 & 11 (64-bit)</span>
+                <span>v1.1.1 • Windows 10 & 11 (64-bit)</span>
               </div>
             </div>
             <p>Traditional desktop installer with custom install directory selector and Start Menu shortcuts.</p>
@@ -384,13 +425,13 @@
               <li><i>✓</i> Full NSIS Setup Wizard</li>
               <li><i>✓</i> Desktop & Start Menu Shortcuts</li>
               <li><i>✓</i> File association for .rcv project files</li>
-              <li><i>✓</i> Package size: ~222 MB</li>
+              <li><i>✓</i> Package size: ~220 MB</li>
             </ul>
-            <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Setup-v1.1.0-x64.exe" class="btn btn-secondary">
-              Download Setup EXE (v1.1.0)
+            <a href="https://github.com/mohammad-sheikh-shahinur-rahman/RECOVA-STUDIO-WIKI/releases/download/v1.1.1/Recova-Studio-Setup-v1.1.1-x64.exe" class="btn btn-secondary">
+              Download Setup EXE (v1.1.1)
             </a>
             <div class="dl-meta-footer">
-              <span>Recova-Studio-Setup-v1.1.0-x64.exe</span>
+              <span>Recova-Studio-Setup-v1.1.1-x64.exe</span>
               <span>x64 Architecture</span>
             </div>
           </div>
